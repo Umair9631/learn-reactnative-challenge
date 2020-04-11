@@ -15,6 +15,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import Horizontal from './components/Horizontal'
 import Superman from './components/Superman';
 import Red from './components/Red';
 import Blue from './components/Blue';
@@ -32,9 +33,7 @@ const App: () => React$Node = () => {
   return (
     <View style={styles.title}>
       
-      <Red />
-      <Blue />
-      <Green />
+      <Horizontal />
     </View>
   );
 };
@@ -47,7 +46,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 100,
   },
 });
 
