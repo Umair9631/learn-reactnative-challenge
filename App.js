@@ -28,19 +28,20 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Login from './components/Login';
 
 const App: () => React$Node = () => {
   return (
-    <View style={styles.title}>
+    <View style={styles.container}>
       
-      <Horizontal />
+      <Login />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   
-  title: {
+  container: {
     flex: 1,
     flexDirection: 'row',
     backgroundColor: '#fff',
